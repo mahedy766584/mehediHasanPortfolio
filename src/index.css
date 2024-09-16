@@ -1,0 +1,219 @@
+/* Poppins font style link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Lato font style link */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Kanit font style link */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Roboto font style link */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    background-color: #090917;
+} */
+
+/* logo style */
+.text-style {
+    background: linear-gradient(-25deg, #1120ec, #EE3E96);
+    color: transparent;
+    background-clip: text;
+}
+
+/* github btn style */
+.skew-btn {
+    background-color: transparent;
+    color: wheat;
+    position: relative;
+    border: 2px solid #7909c8;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.skew-btn:hover {
+    background: linear-gradient(-25deg, #1120ec, #EE3E96);
+}
+
+.skew-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(-25deg, #1120ec, #EE3E96);
+    transform: skewX(35deg);
+    z-index: -9999;
+    transition: width 0.3s ease;
+}
+
+.skew-btn:hover::before {
+    width: 150%;
+    background: linear-gradient(-25deg, #1120ec, #EE3E96);
+}
+
+/* resume btn style */
+.resume-btn {
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.resume-btn:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 20px 20px 60px #1F2634;
+    filter: brightness(1);
+}
+
+/* skills animation card slider style */
+.card-slide {
+    @apply text-center font-kanit py-3 rounded-3xl rounded-tr-[60px] hover:border-t-4 hover:border-x-4 shadow-md flex flex-col justify-center items-center duration-500 mx-auto relative border-t border-x w-[300px] h-[350px] overflow-hidden;
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 590px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: animate 4s linear infinite;
+}
+
+.card-p {
+    position: absolute;
+    inset: 5px;
+    background: #0c1022;
+    border-radius: 16px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-shape-divider-top-1726436394 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1726436394 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 227px;
+}
+
+
+/* https://youtu.be/VwK_CwHExkg // https://youtu.be/VwK_CwHExkg?si=b10LALfDg2a9PBof */
+
+
+/* footer style */
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #3586ff;
+}
+footer .wave {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    background: url(./assets/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0px;
+    animation: animate 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 15x;
+    animation: animate 3s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 998;
+    opacity: 0.5;
+    bottom: 10x;
+    animation: animate2 4s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20x;
+    animation: animate2 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 1000px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+@keyframes animate2 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
