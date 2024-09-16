@@ -13,5 +13,4 @@ Technologies Used:
 Feel free to explore the code and see how I build and organize web applications. Contributions and feedback are always welcome!
 
 
-#Live link
-- [mehediHasan-portfolio](https://mehedi-hasan-portfolio-2oaoohbn1-mahedy766584s-projects.vercel.app/)
+- Live link [mehediHasan-portfolio](https://mehedi-hasan-portfolio-2oaoohbn1-mahedy766584s-projects.vercel.app/)
