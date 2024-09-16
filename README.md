@@ -13,6 +13,5 @@ Technologies Used:
 Feel free to explore the code and see how I build and organize web applications. Contributions and feedback are always welcome!
 
 
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Live link
+- [mehediHasan-portfolio](https://mehedi-hasan-portfolio-2oaoohbn1-mahedy766584s-projects.vercel.app/)
