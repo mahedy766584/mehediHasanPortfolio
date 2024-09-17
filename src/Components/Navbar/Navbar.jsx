@@ -7,7 +7,7 @@ import mLogo from "../../assets/logos/logo4.png"
 const Navbar = () => {
 
     return (
-        <div className="bg-[#090917] text-white font-kanit py-5 fixed w-full z-50">
+        <div className="bg-[#090917] text-white font-kanit py-5 fixed w-full z-60 navbar">
             <Container>
                 <div className="flex justify-between items-center overflow-hidden">
                     <div className="flex items-center">

@@ -6,7 +6,7 @@ import Contact from "../Contact/Contact";
 
 const Home = () => {
     return (
-        <div className="bg-[#090917] text-white">
+        <div className="bg-[#090917] text-white overflow-hidden">
             <Hero/>
             <Skills/>
             <Projects/>

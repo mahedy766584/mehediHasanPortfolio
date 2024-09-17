@@ -75,6 +75,24 @@
     text-align: center;
     padding: 16px 0;
 }
+.submit-btn {
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg,
+            hsla(271, 100%, 50%, 1) 0%,
+            hsla(294, 100%, 50%, 1) 100%);
+    box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 16px 0;
+}
 
 .resume-btn:hover {
     transform: scale(1.05);
@@ -94,8 +112,6 @@
 
 .box {
     position: relative;
-    width: 400px;
-    height: 590px;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 20px;
     display: flex;
@@ -104,11 +120,16 @@
     overflow: hidden;
 }
 
+.navbar, .menuItem{
+    z-index: 10;
+}
+
+
 .box::after {
     content: '';
     position: absolute;
-    width: 750px;
-    height: 750px;
+    width: 950px;
+    height: 950px;
     background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
@@ -117,15 +138,15 @@
 .box::before {
     content: '';
     position: absolute;
-    width: 750px;
-    height: 750px;
+    width: 950px;
+    height: 950px;
     background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
     animation: animate 4s linear infinite;
 }
 
 .card-p {
     position: absolute;
-    inset: 5px;
+    inset: 4px;
     background: #0c1022;
     border-radius: 16px;
     z-index: 1;
@@ -181,13 +202,13 @@ footer .wave#wave1{
     z-index: 1000;
     opacity: 1;
     bottom: 0px;
-    animation: animate 4s linear infinite;
+    animation: animate1 4s linear infinite;
 }
 footer .wave#wave3{
     z-index: 999;
     opacity: 0.2;
     bottom: 15x;
-    animation: animate 3s linear infinite;
+    animation: animate1 3s linear infinite;
 }
 footer .wave#wave2{
     z-index: 998;
@@ -201,7 +222,7 @@ footer .wave#wave4{
     bottom: 20x;
     animation: animate2 3s linear infinite;
 }
-@keyframes animate {
+@keyframes animate1 {
     0%{
         background-position: 1000px;
     }

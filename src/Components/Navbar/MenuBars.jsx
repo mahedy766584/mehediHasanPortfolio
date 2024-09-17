@@ -5,7 +5,7 @@ const MenuBars = () => {
     return (
         <Menu>
             <MenuButton><FaBars size={30} /></MenuButton>
-            <MenuItems anchor="bottom" className={`bg-gradient-to-r from-[#0e0e27] to-[#21215a] w-full text-center space-y-2 py-3 mt-6  duration-700 font-kanit text-white`}>
+            <MenuItems anchor="bottom" className={`bg-gradient-to-r from-[#0e0e27] to-[#21215a] w-full text-center space-y-2 py-3 mt-6  duration-700 font-kanit text-white menuItem`}>
                 <MenuItem>
                     <li className={`hover:text-[#854CE6] duration-700 block data-[focus]:text-[#854CE6]`}><a href="#home">Home</a></li>
                 </MenuItem>
