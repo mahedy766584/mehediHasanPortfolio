@@ -44,6 +44,7 @@ const Contact = () => {
                                         placeholder="Massege"
                                         rows={8}></textarea>
                                     <div className="text-center w-full">
+                                        <p></p>
                                         <input
                                             type="submit"
                                             value="Submite" className="submit-btn w-full mt-4" />
