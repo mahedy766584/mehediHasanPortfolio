@@ -100,7 +100,7 @@ const Contact = () => {
                                         <p></p>
                                         <input
                                             type="submit"
-                                            value="Submite" className="submit-btn w-full mt-4" />
+                                            value="Submite" className="submit-btn cursor-pointer w-full mt-4" />
                                     </div>
                                 </div>
                             </form>
