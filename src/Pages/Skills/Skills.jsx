@@ -77,54 +77,53 @@ const Skills = () => {
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={htmL} alt="html" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">html</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Skilled in Tailwind CSS, creating responsive, modern designs with utility-first classes. I build clean, maintainable UIs efficiently, focusing on flexibility, speed, and seamless user experiences.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide slide-item overflow-hidden bg-gradient-to-t from-[#44A8B3] border-[#44A8B3]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={tailwindCss} alt="tailwind" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">tailwind</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Skilled in Tailwind CSS, creating responsive, modern designs with utility-first classes. I build clean, maintainable UIs efficiently, focusing on flexibility, speed, and seamless user experiences.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide slide-item overflow-hidden bg-gradient-to-t from-[#205A46] border-[#205A46]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={nodeJs} alt="NodeJs" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">node</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Proficient in Node.js, building scalable server-side applications and APIs. I handle asynchronous operations, ensuring fast, efficient back-end performance for seamless full-stack web development.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide slide-item overflow-hidden bg-gradient-to-t from-[#8F5C2F] border-[#8F5C2F]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={firebase} alt="firebase" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">firebase</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Skilled in Firebase, integrating real-time databases, authentication, and cloud functions. I streamline full-stack development with serverless architecture for scalable, responsive web applications.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide overflow-hidden bg-gradient-to-t from-[#439A35] border-[#439A35]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={mongodb} alt="mongodb" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">mongodb</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Proficient in MongoDB, designing flexible, scalable NoSQL databases. I manage data efficiently, ensuring seamless integration with back-end applications for dynamic, full-stack development.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide overflow-hidden bg-gradient-to-t from-[#1572B6] border-[#1572B6]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={css} alt="CSS" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">CSS</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Skilled in CSS, creating responsive, visually appealing designs with clean, maintainable code. I ensure consistency across devices, enhancing user experience through modern layouts and styling techniques.</p>
                                     </div>
                                 </div>
                                 <div className="card-slide overflow-hidden bg-gradient-to-t from-[#F5DE19] border-[#F5DE19]">
                                     <div className="mx-auto">
                                         <img className="w-[100px] h-[100px] mx-auto" src={javascript} alt="javascript" />
                                         <h1 className="mt-5 text-3xl font-medium text-white">javascript</h1>
-                                        <p className="px-4 mt-5">Skilled in React.js, mastering components, hooks, and state management to create dynamic, scalable applications that deliver responsive, seamless, and high-performance user experiences.</p>
+                                        <p className="px-4 mt-5">Proficient in JavaScript, developing dynamic, interactive web applications. I utilize core concepts like ES6+ syntax, DOM manipulation, and asynchronous programming for responsive, high-performance user experiences.</p>
                                     </div>
                                 </div>
                             </Slider>
                         </div>
-
                     </div>
                 </div>
             </Container>

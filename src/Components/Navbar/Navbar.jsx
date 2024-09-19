@@ -7,9 +7,9 @@ import mLogo from "../../assets/logos/logo4.png"
 const Navbar = () => {
 
     return (
-        <div className="bg-[#090917] text-white font-kanit py-5 fixed w-full z-60 navbar">
+        <div className="bg-[#090917] text-white font-kanit py-5 fixed w-full z-50 navbar">
             <Container>
-                <div className="flex justify-between items-center overflow-hidden">
+                <div className="flex justify-between items-center overflow-hidden z-50">
                     <div className="flex items-center">
                         <img
                             src={mLogo}
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <NavItems />
                     </div>
                     <div className="lg:flex hidden">
-                        <button className="skew-btn border px-6 py-3 rounded-lg border-[#7909c8]">GitHub Profile</button>
+                        <button className="skew-btn border px-6 py-3 rounded-lg border-[#7909c8]"><a href="https://github.com/mahedy766584" target="_blank">GitHub Profile</a></button>
                     </div>
                     <div className="lg:hidden">
                         <MenuBars />

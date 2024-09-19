@@ -6,10 +6,12 @@ import { motion } from "framer-motion";
 import { headContainerAnimation, headContentAnimation, headTextAnimation } from "../../../utils/motion";
 import { Tilt } from "react-tilt";
 import HeroBgAnimation from "../../../Components/HeroBgAnimation";
+import Stars from "../../../Components/canvas/Stars"
 
 const Hero = () => {
     return (
         <div className="bg-[#090917] h-[850px] lg:h-full">
+            <Stars/>
             <Container>
                 <motion.div {...headContainerAnimation}>
                     <div className="lg:flex justify-between items-center w-full h-screen relative lg:top-0 top-28 text-center lg:text-start">
@@ -44,7 +46,7 @@ const Hero = () => {
                             <div className="relative ">
                                 <motion.div {...headContentAnimation}>
                                     <Tilt>
-                                        <div className="border-2 border-[#854CE6] rounded-full z-30">
+                                        <div className="border-2 border-[#854CE6] rounded-full">
                                             <img
                                                 src={mehediImg}
                                                 alt="Mehedi Hasan"
