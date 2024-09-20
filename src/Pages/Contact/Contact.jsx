@@ -5,11 +5,11 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Tooltip } from "@chakra-ui/react";
 import emailjs from "@emailjs/browser"
-import { useRef } from "react";
+// import { useRef } from "react";
 
 const Contact = () => {
 
-    const form = useRef(); // useRef দিয়ে ফর্ম রেফারেন্স করা
+    // const form = useRef(); // useRef দিয়ে ফর্ম রেফারেন্স করা
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -36,9 +36,10 @@ const Contact = () => {
         <div className="py-9 lg:px-0 px-5" id="contact">
             <Container>
                 <div className="text-center py-6 mb-10">
-                    <p className="mt-8 text-white text-4xl font-kanit font-medium">"Let's collaborate and build something amazing!_"</p>
+                    <p className="mt-8 text-white lg:text-4xl text-2xl font-kanit font-medium">"Let's collaborate and build something amazing!_"</p>
                 </div>
                 <div className="flex lg:flex-row gap-10  flex-col-reverse  justify-between items-center">
+                    {/* personal information */}
                     <div className="space-y-10">
                         <div className="space-y-8">
                             <h1 className="text-center lg:text-4xl text-3xl py-3 font-medium mb-6">Mohammad Mehedi Hasan</h1>
@@ -61,6 +62,7 @@ const Contact = () => {
                                 <p className="text-lg">Chattogram, Sandwip<br /> Musapur-1,  4300</p>
                             </div>
                         </div>
+                        {/* social media section */}
                         <div className="flex items-center gap-10">
                             <Tooltip hasArrow label='Facebook' className="bg-gradient-to-t from-[#B800FF] py-2 text-white px-4 rounded border-t border-x border-[#B800FF]">
                                 <div className="hover:text-[#854CE6] duration-500"><a href="https://www.facebook.com/MehediWeb2023/" target="_blank"><FaFacebook size={30} /></a></div>
@@ -76,7 +78,8 @@ const Contact = () => {
                             </Tooltip>
                         </div>
                     </div>
-                    <div className="box lg:w-[550px] lg:h-[600px]  w-[450px] h-[600px]">
+                    {/* contact form */}
+                    <div className="box lg:w-[550px] lg:h-[600px]  w-[340px] h-[600px]">
                         <div className="card-p">
                             <form onSubmit={sendEmail} id="my-form">
                                 <div className="bg-transparent flex flex-col w-full px-6 py-6 gap-5 justify-center">

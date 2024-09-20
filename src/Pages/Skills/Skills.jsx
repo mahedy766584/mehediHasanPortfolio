@@ -55,7 +55,7 @@ const Skills = () => {
     };
 
     return (
-        <div id="skills">
+        <div id="skills" className="mt-16 ">
             <Container>
                 <div className="py-2">
                     <div className="text-center font-kanit tracking-wider flex flex-col justify-center items-center">

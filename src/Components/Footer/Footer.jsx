@@ -19,7 +19,7 @@ const Footer = () => {
                 </svg>
                 <Container>
                     <div className=" text-white flex flex-col space-y-10 justify-center items-center">
-                        <ul className="lg:flex  flex-wrap gap-10 items-center text-lg text-center mx-auto">
+                        <ul className="lg:flex grid grid-cols-4 gap-10 items-center text-lg text-center mx-auto">
                             <li className={`hover:text-[#854CE6] duration-700`}><a href="#home">Home</a></li>
                             <li className={`hover:text-[#854CE6] duration-700`}><a href="#skills">Skills</a></li>
                             <li className={`hover:text-[#854CE6] duration-700`}><a href="#projects">Projects</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </Container>
             </div>
-            <div className="absolute top-40 right-10 ">
+            <div className="absolute lg:top-40 top-36 lg:right-10 right-4">
                 <button className="text-white bg-gradient-to-t from-[#B800FF] rounded-md p-4 border-t border-x border-[#B800FF] animate-pulse"><a href="#"><FaArrowUp/></a></button>
             </div>
         </footer>
