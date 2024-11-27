@@ -1,17 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer"
+import Navbar from "../Components/NewNavbar/Navbar";
 
 const MainLayout = () => {
     return (
-        <div>
-            <Navbar />
-            <div>
-                <Outlet />
-            </div>
-            <Footer />
+        <div className="bg-bgColor">
+            <Outlet />
+            <Navbar/>
         </div>
     );
 };
 
 export default MainLayout;
+
+{/* https://youtu.be/ck3YJDDlgaw */}

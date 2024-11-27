@@ -1,0 +1,43 @@
+:root {
+    --nav-bg-color: rgba(255, 255, 255, .1);
+    --bg-color: #171f2b;
+    --second-bg-color: #1f2733;
+    --third-bg-color: #2d3542;
+    --main-color: #0ef;
+    --white-color: #fff;
+    --tab-list-color: #7c8594;
+}
+::selection {
+    background:  var(--main-color);
+    color: var(--bg-color);
+}
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 1rem;
+}
+::placeholder {
+    color: var(--white-color);
+}
+
+.nav{
+    @apply fixed lg:bottom-10 bottom-8 flex justify-center  w-full  
+}
+.nav-list{
+    @apply flex justify-center py-4 lg:gap-14 gap-8 md:gap-14 px-6 items-center z-30 bg-bgColor shadow-btnShadow  rounded-full
+}
+
+.nav-list .nav-icon  {
+    @apply text-2xl
+}
+
+.nav-list .tooltip  {
+    @apply bg-mainColor text-[16px] text-bgColor font-medium px-5 py-2 -mt-5 z-50
+}
+
+.nav-icon{
+    @apply hover:text-mainColor duration-300 
+}
+

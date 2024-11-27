@@ -1,0 +1,53 @@
+.about{
+    @apply bg-bgColor lg:h-full w-full text-whiteColor lg:pt-0 pt-10
+}
+.about_main{
+    @apply lg:space-y-0 h-full bg-bgColor
+}
+.about_content{
+    @apply lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen h-full bg-bgColor gap-14 
+}
+.about .text-content h1 {
+    @apply text-white font-bold
+}
+.about .text-content h2{
+    @apply text-mainColor  font-semibold
+}
+.about  .text-content .des{
+    @apply font-normal text-lg
+}
+
+.about .view-btn{
+    @apply bg-mainColor text-bgColor px-5 py-2 font-medium rounded-full mt-6 shadow-btnShadow duration-300 hover:shadow-none
+}
+
+.about_img_about{
+    @apply relative flex justify-center items-center border-[6px] w-[300px] h-[300px] mx-auto lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-mainColor shadow-imgShadow duration-500 hover:shadow-hoverShadow
+}
+.about-img .about_img {
+    @apply bg-center bg-cover bg-no-repeat bg-blend-overlay w-full  lg:mt-44 mt-28
+}
+.second_about, .third_about{
+    @apply  w-full lg:flex lg:flex-row flex flex-col-reverse lg:justify-between lg:items-center lg:text-start text-center pb-36  px-3  lg:gap-20 gap-2 -mt-10 lg:pb-0 lg:-mt-52
+}
+.animate-box{
+    @apply lg:flex-1 w-full h-full
+}
+.text-box{
+    @apply w-full h-full lg:w-4/5 
+}
+.animate1{
+    @apply lg:w-[500px] lg:h-[700px] lg:flex-1
+}
+.about1-text{
+    @apply text-xl
+}
+.third_about{
+    @apply lg:-mt-40 lg:flex-row-reverse -mt-24
+}
+.forth_about{
+    @apply lg:flex flex flex-col-reverse text-center lg:gap-24 gap-4 items-center justify-between -mt-20 lg:pb-0 pb-36
+}
+.view-btn{
+    @apply lg:text-start text-center flex justify-center items-center mx-auto lg:mx-0
+}

@@ -1,0 +1,91 @@
+.projects{
+    @apply bg-bgColor w-full lg:h-screen h-full text-whiteColor lg:pb-0 pb-40 pt-10 lg:pt-0  z-0
+}
+.projects_box{
+    @apply grid lg:grid-cols-2 grid-cols-1 lg:space-y-0  lg:pb-0  lg:h-full h-screen lg:mx-0 mx-auto z-0 lg:gap-5
+}
+.projects_carousel{
+    @apply relative lg:py-6  h-full z-0 mt-10
+}
+.slide_img{
+    @apply bg-cover bg-center bg-no-repeat bg-blend-overlay  rounded lg:h-[380px] h-[250px]  z-0
+}
+.projects_slides{
+    @apply text-white 
+}
+.icons_box_first {
+    position: relative;
+    background: repeating-conic-gradient(
+        from var(--a), 
+        #fff 0%, 
+        #fff 5%, 
+        transparent 5%, 
+        transparent 40%, 
+        #fff 50%
+    );
+    animation: animate 4s linear infinite;
+    border-radius: 5px;
+    color: wheat; 
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    @apply lg:w-[400px] md:w-[400px] h-[50px] mx-auto lg:px-0 
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg;
+    }
+    100% {
+        --a: 360deg;
+    }
+}
+
+.icons_box_first::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(
+        from var(--a), 
+        #45f3ff 0%, 
+        #45f3ff 5%, 
+        transparent 5%, 
+        transparent 40%, 
+        #45f3ff 50%
+    );
+    animation: animate 4s linear infinite;
+    animation-delay: -1s;
+    border-radius: 5px;
+    color: wheat; 
+}
+.icons_box_first::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--bg-color);
+    border-radius: 5px;
+    color: wheat; 
+}
+.icons_box_second{
+    @apply z-30 flex w-full 
+}
+.icon_btn{
+    @apply border-r w-full hover:text-bgColor h-full flex justify-center items-center font-poppins text-lg font-medium hover:bg-mainColor duration-500 hover:border-none lg:px-4 px-2
+}
+.icon_box{
+    @apply border-none
+}
+.projects_box_second{
+    @apply lg:-mt-0 
+}
+
+

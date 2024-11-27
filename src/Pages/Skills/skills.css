@@ -1,0 +1,27 @@
+.skills{
+    @apply bg-bgColor lg:h-screen h-full text-whiteColor w-full lg:pt-0 pt-10
+}
+.skill_title{
+    @apply text-4xl font-poppins font-medium text-center py-4
+}
+.title_divider{
+    @apply w-full h-0.5 bg-mainColor
+}
+.skill_tab_item {
+    @apply lg:h-[500px] overflow-scroll px-3 py-3 lg:pb-0 pb-32
+}
+.tab-grid{
+    @apply grid lg:grid-cols-5 py-5 gap-6
+}
+.tab-item{
+    @apply flex flex-col items-center text-center justify-center bg-navBgColor p-4 rounded-md cursor-pointer duration-500
+}
+.tab-item:hover .skill_logo{
+    @apply text-mainColor duration-500
+}
+.tab-item > p{
+    @apply text-2xl
+}
+.skill_logo{
+    @apply text-8xl 
+}
