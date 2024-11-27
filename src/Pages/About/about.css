@@ -1,11 +1,11 @@
 .about{
-    @apply bg-bgColor lg:h-full w-full text-whiteColor lg:pt-0 pt-10
+    @apply  lg:h-full w-full text-whiteColor lg:pt-0  bg-bgColor bg-opacity-80
 }
 .about_main{
-    @apply lg:space-y-0 h-full bg-bgColor
+    @apply lg:space-y-0 h-full 
 }
 .about_content{
-    @apply lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen h-full bg-bgColor gap-14 
+    @apply lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen h-full  gap-14 
 }
 .about .text-content h1 {
     @apply text-white font-bold
@@ -28,7 +28,7 @@
     @apply bg-center bg-cover bg-no-repeat bg-blend-overlay w-full  lg:mt-44 mt-28
 }
 .second_about, .third_about{
-    @apply  w-full lg:flex lg:flex-row flex flex-col-reverse lg:justify-between lg:items-center lg:text-start text-center pb-36  px-3  lg:gap-20 gap-2 -mt-10 lg:pb-0 lg:-mt-52
+    @apply  w-full lg:flex relative lg:flex-row flex flex-col-reverse lg:justify-between lg:items-center lg:text-start text-center pb-36  px-3  lg:gap-20 gap-2 -mt-10 lg:pb-0 lg:-mt-52
 }
 .animate-box{
     @apply lg:flex-1 w-full h-full
@@ -43,11 +43,14 @@
     @apply text-xl
 }
 .third_about{
-    @apply lg:-mt-40 lg:flex-row-reverse -mt-24
+    @apply lg:-mt-40 lg:flex-row-reverse -mt-24 
 }
 .forth_about{
-    @apply lg:flex flex flex-col-reverse text-center lg:gap-24 gap-4 items-center justify-between -mt-20 lg:pb-0 pb-36
+    @apply lg:flex flex lg:flex-row lg:text-start flex-col-reverse text-center lg:gap-24 gap-4 items-center justify-between -mt-20 lg:pb-0 pb-36
 }
 .view-btn{
     @apply lg:text-start text-center flex justify-center items-center mx-auto lg:mx-0
+}
+.five_about{
+    @apply flex items-center lg:gap-24 gap-4  lg:flex-row-reverse lg:text-start text-center lg:pb-0 pb-28 flex-col-reverse
 }

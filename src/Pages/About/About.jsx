@@ -119,7 +119,7 @@ const About = () => {
                         {
                             visibleSection >= 4 && (
                                 <div
-                                    className={`forth_about`}
+                                    className={`five_about`}
                                 >
                                     <div className="text-box">
                                         <p className="about1-text">
