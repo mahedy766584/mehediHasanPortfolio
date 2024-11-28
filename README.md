@@ -13,3 +13,21 @@ Welcome to my web development portfolio! I specialize in creating responsive and
      - HealthFusion: A healthcare solution platform.
 
 
+# 🛠 Technologies Used
+- Frontend: React.js, 
+- Tailwind CSS
+- Email Js
+- Material Tailwind/react
+- Backend: Node.js, Express.js
+- Firebase
+- React Hook Form
+- React Hot Toast
+- React Dom
+- React Icons
+- React Tilt
+- Swiper
+- Typewriter Effect
+- Lottie React
+- Sort By
+
+
