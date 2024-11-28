@@ -33,6 +33,19 @@ Welcome to my web development portfolio! I specialize in creating responsive and
 
 
 # 🔗 Live Demo
-Check out the live version of my portfolio: [mehediPortfolio](https://mehedi-6a626.web.app/)
+Check out the live version of my portfolio: [Portfolio Live Link](https://mehedi-6a626.web.app/)
+
+
+
+# 📂 Projects Included
+1. LuxeLodge
+.Description: A modern hotel management system.
+.Features: Room booking, availability checks, video backgrounds, pagination, and more.
+.Tech Stack: MERN stack, Firebase Authentication, React Hook Form.
+
+2. HealthFusion
+.Description: A healthcare platform for connecting patients with services.
+.Features: Appointment scheduling, user dashboard, and more.
+.Tech Stack: React.js, Tailwind CSS, Node.js.
 
 
