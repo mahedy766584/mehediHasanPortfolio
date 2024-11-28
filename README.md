@@ -49,3 +49,10 @@ Check out the live version of my portfolio: [Portfolio Live Link](https://mehedi
 - Tech Stack: React.js, Tailwind CSS, Node.js.
 
 
+# 📬 Contact
+- Email: mehediweb2023@gmail.com
+- [LinkedIn:](https://www.linkedin.com/in/mohammad-mehedi-hasan-364b2432b/)
+
+
+# 🏆 Credits
+Created with ❤️ by [Mohammad Mehedi Hasan].
