@@ -1,4 +1,4 @@
-# [mehediPortfolio](https://mehedi-6a626.web.app/) 🌐
+# Mehedi Hasan Portfolio 🌐
 
 Junior Web Developer Portfolio:
 Welcome to my web development portfolio! I specialize in creating responsive and dynamic websites using modern technologies. This repository showcases my work, skills, and the projects I've developed.
