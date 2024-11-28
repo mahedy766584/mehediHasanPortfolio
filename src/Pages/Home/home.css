@@ -42,6 +42,10 @@
     @apply bg-mainColor text-[16px] text-bgColor font-medium px-5 py-2 mt-0  hover:text-bgColor
 }
 
+.img-wrapper{
+    @apply duration-700
+}
+
 .img-box{
     @apply lg:mx-0 mx-auto lg:mt-0 transition duration-500 ease-in-out flex justify-center overflow-hidden relative shadow-imgShadow lg:w-[500px] lg:h-[500px] bg-gradient-to-t from-mainColor to-bgColor rounded-full border-8 border-mainColor w-[300px] h-[300px]
 }

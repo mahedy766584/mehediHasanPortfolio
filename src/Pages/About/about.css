@@ -1,5 +1,5 @@
 .about{
-    @apply  lg:h-full w-full text-whiteColor lg:pt-0  bg-bgColor bg-opacity-80
+    @apply  lg:h-full w-full text-whiteColor lg:pt-0  bg-bgColor bg-opacity-80 
 }
 .about_main{
     @apply lg:space-y-0 h-full 
@@ -22,7 +22,7 @@
 }
 
 .about_img_about{
-    @apply relative flex justify-center items-center border-[6px] w-[300px] h-[300px] mx-auto lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-mainColor shadow-imgShadow duration-500 hover:shadow-hoverShadow
+    @apply relative backdrop-blur-sm bg-bgColor/30 flex justify-center items-center border-[6px] w-[300px] h-[300px] mx-auto lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-mainColor shadow-imgShadow duration-500 hover:shadow-hoverShadow
 }
 .about-img .about_img {
     @apply bg-center bg-cover bg-no-repeat bg-blend-overlay w-full  lg:mt-44 mt-28

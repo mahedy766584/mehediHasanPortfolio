@@ -14,7 +14,7 @@
     @apply grid lg:grid-cols-5 py-5 gap-6
 }
 .tab-item{
-    @apply flex flex-col items-center text-center justify-center bg-navBgColor p-4 rounded-md cursor-pointer duration-500
+    @apply flex flex-col items-center text-center justify-center bg-navBgColor/10 backdrop-blur-sm p-4 rounded-md cursor-pointer duration-500
 }
 .tab-item:hover .skill_logo{
     @apply text-mainColor duration-500

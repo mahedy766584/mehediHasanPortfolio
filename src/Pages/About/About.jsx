@@ -11,6 +11,7 @@ import animation1 from "../../../public/animation/animation2.json";
 import animation2 from "../../../public/animation/animation1.json";
 import animation3 from "../../../public/animation/animation3.json";
 import animation4 from "../../../public/animation/animation4.json";
+import { Tilt } from "react-tilt";
 
 const About = () => {
 
@@ -29,11 +30,19 @@ const About = () => {
             <Container>
                 <div className="about_main">
                     <div className="about_content">
-                        <div className="about-img">
-                            <div className="img_box about_img_about">
-                                <img src={aboutImg} className="about_img" />
+                        <Tilt
+                            glareEnable={true}
+                            glareMaxOpacity={0.8}
+                            scale={1.1}
+                            tiltMaxAngleX={25}
+                            tiltMaxAngleY={25}
+                        >
+                            <div className="about-img">
+                                <div className="img_box about_img_about">
+                                    <img src={aboutImg} className="about_img" />
+                                </div>
                             </div>
-                        </div>
+                        </Tilt>
                         <div className="text-content">
                             <h1>About Me</h1>
                             <h2>
