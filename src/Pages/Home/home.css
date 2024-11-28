@@ -3,7 +3,7 @@
     @apply bg-bgColor bg-opacity-85 w-full h-full font-poppins text-white
 }
 .home-content {
-    @apply lg:flex lg:flex-row flex gap-14 lg:py-0 py-6 flex-col-reverse lg:justify-between lg:h-screen lg:items-center
+    @apply lg:flex lg:flex-row flex gap-14 lg:py-0 py-6 flex-col-reverse lg:justify-between lg:h-screen  lg:items-center
 }
 .text-content h3 {
     @apply text-3xl font-medium tracking-wide lg:text-start text-center
