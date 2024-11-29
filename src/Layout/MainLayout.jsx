@@ -8,6 +8,9 @@ const MainLayout = () => {
             <div className="absolute w-full h-full">
                 <img src={background} className="bg-center bg-cover bg-no-repeat bg-blend-overlay w-full h-full" />
             </div>
+            {/* <div className="absolute w-full h-full top-0">
+
+            </div> */}
             <div className=" relative">
                 <Outlet />
                 <Navbar />
