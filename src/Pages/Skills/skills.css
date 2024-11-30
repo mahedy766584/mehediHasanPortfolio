@@ -1,5 +1,5 @@
 .skills{
-    @apply bg-bgColor bg-opacity-85 lg:h-screen h-full text-whiteColor w-full lg:pt-0 pt-10
+    @apply lg:h-screen h-full text-whiteColor w-full lg:pt-0 pt-10
 }
 .skill_title{
     @apply text-4xl font-poppins font-medium text-center py-4

@@ -12,7 +12,7 @@ const MotionAnimation = ({ children }) => {
     return (
         <>
             <motion.div
-                className="min-h-screen flex items-center justify-center"
+                className="h-full flex items-center justify-center"
                 variants={pageAnimation}
                 initial="initial"
                 animate="animate"

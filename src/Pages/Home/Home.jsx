@@ -9,13 +9,13 @@ import { Tooltip, Button } from "@material-tailwind/react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { Tilt } from "react-tilt";
-import MotionAnimation from "../../Components/MotionAnimation";
+import MainAnimation from "../../Components/MainAnimation";
 // import Tilt from 'react-parallax-tilt';
 
 const Home = () => {
     return (
         <>
-            <MotionAnimation>
+            <MainAnimation height="lg:h-screen h-[1150px]">
                 <div className="home">
                     <Container>
                         <div className="home-content">
@@ -111,7 +111,7 @@ const Home = () => {
                         </div>
                     </Container>
                 </div>
-            </MotionAnimation>
+            </MainAnimation>
         </>
     );
 };

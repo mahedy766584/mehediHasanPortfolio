@@ -16,13 +16,13 @@ import img9 from "../../assets/healthFusionImg/helthFusionImg3.png";
 import img10 from "../../assets/healthFusionImg/helthFusionImg4.png";
 import img11 from "../../assets/healthFusionImg/healthFusionImg5.png";
 import img12 from "../../assets/healthFusionImg/healthFusionImg6.png";
-import MotionAnimation from "../../Components/MotionAnimation";
+import MainAnimation from "../../Components/MainAnimation";
 
 
 const Projects = () => {
     return (
         <>
-            <MotionAnimation>
+            <MainAnimation height={'h-[1100px] lg:h-full'}>
                 <div className="projects">
                     <Container>
                         <h1 className="skill_title">My Projects</h1>
@@ -67,7 +67,7 @@ const Projects = () => {
                         </div>
                     </Container>
                 </div>
-            </MotionAnimation>
+            </MainAnimation>
         </>
     );
 };

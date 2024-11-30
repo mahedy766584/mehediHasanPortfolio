@@ -12,27 +12,36 @@ import animation2 from "../../../public/animation/animation1.json";
 import animation3 from "../../../public/animation/animation3.json";
 import animation4 from "../../../public/animation/animation4.json";
 import { Tilt } from "react-tilt";
-import MotionAnimation from "../../Components/MotionAnimation";
+import MainAnimation from "../../Components/MainAnimation";
 
 const About = () => {
 
     const [visibleSection, setVisibleSection] = useState(0);
+    const [backgroundHeight, setBackgroundHeight] = useState("h-[1000px] lg:h-screen");
 
     const handleViewMore = () => {
         setVisibleSection((prev) => prev + 1);
+
+        //background height updating;
+        if (visibleSection === 0) setBackgroundHeight("lg:h-[1300px] h-[1700px]");
+        else if (visibleSection === 1) setBackgroundHeight("lg:h-[1790px] h-[2260px]");
+        else if (visibleSection === 2) setBackgroundHeight("lg:h-[2500px] h-[3000px]");
+        else if (visibleSection === 3) setBackgroundHeight("lg:h-[3200px] h-[3500px]");
+        else if (visibleSection === 4) setBackgroundHeight("lg:h-[3400px] ");
     };
 
     const handleViewLess = () => {
         setVisibleSection(0);
+        setBackgroundHeight("lg:h-screen h-[1000px]")
     }
 
     return (
         <>
-            <MotionAnimation>
+            <MainAnimation height={`${backgroundHeight}`}>
                 <div className="about">
                     <Container>
                         <div className="about_main">
-                            <div className="about_content">
+                            <div className={`about_content lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen  h-full  gap-14`}>
                                 <Tilt
                                     glareEnable={true}
                                     glareMaxOpacity={0.8}
@@ -153,7 +162,7 @@ const About = () => {
                         </div>
                     </Container>
                 </div>
-            </MotionAnimation>
+            </MainAnimation>
         </>
     );
 };

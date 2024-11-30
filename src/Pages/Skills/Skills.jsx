@@ -6,13 +6,13 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { GrReactjs } from "react-icons/gr";
 import { SiChakraui, SiDaisyui, SiExpress, SiMongodb, SiPixlr, SiReactrouter } from "react-icons/si";
 import { DiMaterializecss } from "react-icons/di";
-import MotionAnimation from "../../Components/MotionAnimation";
+import MainAnimation from "../../Components/MainAnimation"
 
 
 const Skills = () => {
     return (
         <>
-            <MotionAnimation>
+            <MainAnimation height="h-[3400px] lg:h-screen">
                 <section className="skills">
                     <Container>
                         <div>
@@ -89,7 +89,7 @@ const Skills = () => {
                         </div>
                     </Container>
                 </section>
-            </MotionAnimation>
+            </MainAnimation>
         </>
     );
 };

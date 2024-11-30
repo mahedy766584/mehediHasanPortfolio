@@ -1,12 +1,12 @@
 .about{
-    @apply  lg:h-full w-full text-whiteColor lg:pt-0  bg-bgColor bg-opacity-80 
+    @apply  lg:h-full h-full w-full text-whiteColor lg:pt-0  bg-opacity-80 
 }
 .about_main{
     @apply lg:space-y-0 h-full 
 }
-.about_content{
-    @apply lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen h-full  gap-14 
-}
+/* .about_content{
+    @apply lg:flex justify-between lg:space-y-0 space-y-10 py-8 pb-32 items-center lg:h-screen  h-full  gap-14 
+} */
 .about .text-content h1 {
     @apply text-white font-bold
 }
