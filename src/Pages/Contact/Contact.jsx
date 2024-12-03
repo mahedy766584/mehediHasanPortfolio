@@ -1,15 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import Container from "../../Components/Container/Container";
-import { MdOutlineMail, MdPhoneInTalk } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import emailjs from "@emailjs/browser"
 import toast from "react-hot-toast";
-import { Tooltip } from "@material-tailwind/react";
+import MainAnimation from "../../Components/MainAnimation";
+import "./contact.css";
 
 const Contact = () => {
-
-    // const form = useRef(); // useRef দিয়ে ফর্ম রেফারেন্স করা
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,7 +18,7 @@ const Contact = () => {
         )
             .then((result) => {
                 console.log('Email sent successfully:', result.text);
-                toast.success('Your comment has been send successfully.')
+                toast.success('Your message has been send successfully.')
             })
             .catch((error) => {
                 console.error('Email sending error:', error.text);
@@ -34,89 +29,60 @@ const Contact = () => {
     };
 
     return (
-        // <div className="py-9 lg:px-0 px-5" id="contact">
-        //     <Container>
-        //         <div className="text-center py-6 mb-10">
-        //             <p className="mt-8 text-white lg:text-4xl text-2xl font-kanit font-medium">"Let's collaborate and build something amazing!_"</p>
-        //         </div>
-        //         <div className="flex lg:flex-row gap-10  flex-col-reverse  justify-between items-center">
-        //             {/* personal information */}
-        //             <div className="space-y-10">
-        //                 <div className="space-y-8">
-        //                     <h1 className="text-center lg:text-4xl text-3xl py-3 font-medium mb-6">Mohammad Mehedi Hasan</h1>
-        //                     <div className="flex items-center gap-5">
-        //                         <div className=" border-t border-x border-[#B800FF] rounded-md p-4 bg-gradient-to-t from-[#B800FF] cursor-pointer">
-        //                             <MdOutlineMail size={30} />
-        //                         </div>
-        //                         <p className="text-lg">mehediweb2023@gmail.co, <br /> mahedyhasan766584@gmail.com</p>
-        //                     </div>
-        //                     <div className="flex items-center gap-5">
-        //                         <div className=" border-t border-x border-[#B800FF] rounded-md p-4 bg-gradient-to-t from-[#B800FF] cursor-pointer">
-        //                             <MdPhoneInTalk size={30} />
-        //                         </div>
-        //                         <p className="text-lg">+8801783925140<br /> +8801753889885</p>
-        //                     </div>
-        //                     <div className="flex items-center gap-5">
-        //                         <div className=" border-t border-x border-[#B800FF] rounded-md p-4 bg-gradient-to-t from-[#B800FF] cursor-pointer">
-        //                             <IoLocationSharp size={30} />
-        //                         </div>
-        //                         <p className="text-lg">Chattogram, Sandwip<br /> Musapur-1,  4300</p>
-        //                     </div>
-        //                 </div>
-        //                 {/* social media section */}
-        //                 <div className="flex items-center gap-10">
-        //                     <Tooltip content="Facebook" placement="bottom" className="bg-gradient-to-t from-[#B800FF] px-3 py-1">
-        //                         <div className="hover:text-[#854CE6] duration-500"><a href="https://www.facebook.com/MehediWeb2023/" target="_blank"><FaFacebook size={30} /></a></div>
-        //                     </Tooltip>
-        //                     <Tooltip content="Linkedin" placement="bottom" className="bg-gradient-to-t from-[#B800FF] px-3 py-1">
-        //                         <div className="hover:text-[#854CE6] duration-500"><a href="#"><FaLinkedin size={30} /></a></div>
-        //                     </Tooltip>
-        //                     <Tooltip content="Twitter" placement="bottom" className="bg-gradient-to-t from-[#B800FF] px-3 py-1">
-        //                         <div className="hover:text-[#854CE6] duration-500"><a href="#"><FaTwitter size={30} /></a></div>
-        //                     </Tooltip>
-        //                     <Tooltip content="Instagram" placement="bottom" className="bg-gradient-to-t from-[#B800FF] px-3 py-1">
-        //                         <div className="hover:text-[#854CE6] duration-500"><a href="#"><FaInstagram size={30} /></a></div>
-        //                     </Tooltip>
-        //                 </div>
-        //             </div>
-        //             {/* contact form */}
-        //             <div className="box lg:w-[550px] lg:h-[600px]  w-[340px] h-[600px]">
-        //                 <div className="card-p">
-        //                     <form onSubmit={sendEmail} id="my-form">
-        //                         <div className="bg-transparent flex flex-col w-full px-6 py-6 gap-5 justify-center">
-        //                             <h1 className="text-center text-4xl py-3 font-medium">Contact Me 📱</h1>
-        //                             <input
-        //                                 className="bg-transparent border rounded border-[#7909c8] outline-none px-4 py-3"
-        //                                 type="email"
-        //                                 name="user_email"
-        //                                 placeholder="Your Email" />
-        //                             <input
-        //                                 className="bg-transparent border rounded border-[#7909c8] outline-none px-4 py-3"
-        //                                 type="text"
-        //                                 name="user_name"
-        //                                 placeholder="Your Name" />
-        //                             <textarea
-        //                                 className="bg-transparent border rounded border-[#7909c8] outline-none px-4 py-3"
-        //                                 name="message"
-        //                                 placeholder="Massege"
-        //                                 rows={8}></textarea>
-        //                             <div className="text-center w-full">
-        //                                 <p></p>
-        //                                 <input
-        //                                     type="submit"
-        //                                     value="Submite" className="submit-btn cursor-pointer w-full mt-4" />
-        //                             </div>
-        //                         </div>
-        //                     </form>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </Container>
-        // </div>
         <>
-            <div>
+            <MainAnimation height={'lg:h-screen h-[850px]'}>
+                <div>
+                    <h1 className="title_contact">Contact</h1>
 
-            </div>
+                    <div className="contact_main_box">
+                        <h1 className="title_p_contact">"Let's collaborate and build something amazing!_"</h1>
+                        <form onSubmit={sendEmail} id="my-form" className="contact_form">
+                            <div className="contact_form_box">
+                                <div className="contact_lin_box">
+                                    <input
+                                        type="text"
+                                        name="user_name"
+                                        className="contact_input"
+                                        placeholder="Full Name"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="user_email"
+                                        className="contact_input"
+                                        placeholder="Email Address"
+                                    />
+                                </div>
+                                <div className="contact_lin_box">
+                                    <input
+                                        type="number"
+                                        name="user_phone_number"
+                                        className="contact_input"
+                                        placeholder="Phone Number"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        className="contact_input"
+                                        placeholder="Subject"
+                                    />
+                                </div>
+                            </div>
+                            <textarea
+                                name="user_message"
+                                className="contact_textarea"
+                                placeholder="Your Message"
+                            ></textarea>
+                            <div className="contact_btn_box">
+                                <button
+                                    type="submit"
+                                    className="contact_form_btn"
+                                >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </MainAnimation>
         </>
     );
 };

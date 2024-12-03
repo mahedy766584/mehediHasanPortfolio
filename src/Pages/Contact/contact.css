@@ -1,0 +1,30 @@
+.title_contact{
+    @apply lg:text-4xl text-3xl text-whiteColor lg:py-4 lg:mt-3 mt-10 font-medium font-poppins text-center
+}
+.contact_main_box{
+    @apply flex flex-col justify-center items-center w-full mt-4
+}
+.title_p_contact{
+    @apply text-center text-2xl text-mainColor font-medium
+}
+.contact_form {
+    @apply flex flex-col gap-5 mt-6 lg:px-0 px-4 
+}
+.contact_form_box{
+    @apply flex flex-col gap-5 mt-6 w-full
+}
+.contact_lin_box{
+    @apply lg:flex items-center gap-5 w-full lg:space-y-0 space-y-5
+}
+.contact_input{
+    @apply bg-thirdBgColor py-3 text-[16px] lg:w-80 w-full px-4 text-whiteColor font-medium font-poppins outline-mainColor border-none rounded focus:border-none
+}
+.contact_textarea{
+    @apply bg-thirdBgColor py-3 text-[16px] px-4 text-whiteColor font-medium font-poppins outline-mainColor border-none rounded focus:border-none w-full h-36
+}
+.contact_btn_box{
+    @apply text-center flex justify-center items-center lg:pb-0 
+}
+.contact_form_btn{
+    @apply bg-mainColor text-bgColor shadow-btnShadow hover:shadow-none duration-500 font-lato font-medium flex items-center gap-2 max-w-52 justify-center px-4 py-2 rounded-full hover:text-bgColor lg:text-start text-center lg:mx-0 mx-auto  
+}
